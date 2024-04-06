@@ -270,7 +270,7 @@
   <script src="{{ env('APP_URL') }}assets/backend/js/script.js" type="text/javascript"></script>
   <script type="text/javascript">
        $(document).ready(function() {
-          $(".select2").select2();upload_hinhanh("{{ env('APP_URL') }}/image/uploads");delete_hinhanh();
+          $(".select2").select2();upload_hinhanh("{{ env('APP_URL') }}image/uploads");delete_hinhanh();
           @if (old('address.0') !== null)
           $.get("{{ env('APP_URL') }}address/get/{{ old('address.0') }}/{{ old('address.1') }}", function(huyen){
             $("#address_2").html(huyen);

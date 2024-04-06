@@ -2,9 +2,9 @@
 <html>
     <head>
       <meta charset="utf-8" />
-      <title>Chiếu UZU | @yield('title')</title>
+      <title>Trạm dừng nghỉ Thần Tài - Công ty TNHH Khải Duyên | @yield('title')</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-      <meta content="Chiếu UZU Tân Châu Long" name="description" />
+      <meta content="Trạm dừng nghỉ Thần Tài - Công ty TNHH Khải Duyên" name="description" />
       <meta content="Phan Minh Trung" name="author" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <!-- App favicon -->
@@ -25,7 +25,7 @@
                 <div class="slimscroll-menu" id="remove-scroll">
                     <!-- LOGO -->
                     <div class="topbar-left">
-                        <a href="{{ env('APP_URL') }}/admin" class="logo">
+                        <a href="{{ env('APP_URL') }}admin" class="logo">
                             <span>
                                 <img src="{{ env('APP_URL') }}assets/backend/images/logo.png" alt="" height="22">
                             </span>
@@ -160,7 +160,7 @@
                             <li>
                                 <div class="page-title-box">
                                   @section('title_box')
-                                    <h4 class="page-title">Chiếu UZU Tân Châu Long</h4>
+                                    <h4 class="page-title">Trạm dừng nghỉ Thần Tài - Công ty TNHH Khải Duyên</h4>
                                   @show
                                 </div>
                             </li>

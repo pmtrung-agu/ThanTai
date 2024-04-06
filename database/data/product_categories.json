@@ -1,0 +1,86 @@
+{
+  "_id": {
+    "$oid": "65e5279f758b1102fe0040a2"
+  },
+  "title": "Phụ kiện",
+  "slug": "phu-kien",
+  "id_parent": "",
+  "order": 0,
+  "icon": null,
+  "photos": [],
+  "status": 0,
+  "updated_at": {
+    "$date": "2024-03-08T01:43:44.283Z"
+  },
+  "created_at": {
+    "$date": "2024-03-04T01:45:03.482Z"
+  }
+}{
+  "_id": {
+    "$oid": "65e547d05d42c9f965055782"
+  },
+  "title": "Túi sách",
+  "slug": "tui-sach",
+  "id_parent": "",
+  "order": 0,
+  "icon": null,
+  "photos": [],
+  "status": 0,
+  "updated_at": {
+    "$date": "2024-03-08T01:43:47.503Z"
+  },
+  "created_at": {
+    "$date": "2024-03-04T04:02:24.315Z"
+  }
+}{
+  "_id": {
+    "$oid": "65e82d8d35237aa03f0df992"
+  },
+  "title": "Nón",
+  "slug": "non",
+  "id_parent": "",
+  "order": 0,
+  "icon": null,
+  "photos": [],
+  "status": 0,
+  "updated_at": {
+    "$date": "2024-03-08T01:43:51.123Z"
+  },
+  "created_at": {
+    "$date": "2024-03-06T08:47:09.311Z"
+  }
+}{
+  "_id": {
+    "$oid": "65e82f9823e3c36a0506d162"
+  },
+  "title": "Chiếu",
+  "slug": "chieu",
+  "id_parent": "",
+  "order": 0,
+  "icon": null,
+  "photos": [],
+  "status": 0,
+  "updated_at": {
+    "$date": "2024-03-08T01:43:54.722Z"
+  },
+  "created_at": {
+    "$date": "2024-03-06T08:55:52.039Z"
+  }
+}{
+  "_id": {
+    "$oid": "65e9ad80c0ea2456bb06b322"
+  },
+  "title": "Sản phẩm",
+  "slug": "san-pham",
+  "id_parent": "",
+  "order": 0,
+  "icon": null,
+  "photos": [],
+  "status": 1,
+  "updated_at": {
+    "$date": "2024-03-07T12:05:20.110Z"
+  },
+  "created_at": {
+    "$date": "2024-03-07T12:05:20.110Z"
+  }
+}

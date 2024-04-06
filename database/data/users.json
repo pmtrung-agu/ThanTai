@@ -1,0 +1,85 @@
+{
+  "_id": {
+    "$oid": "65dd5cc73073b5a2df05c207"
+  },
+  "name": "Chiếu UZU Tân Châu Long",
+  "email": "chieu_uzu_tcl@gmail.com",
+  "password": "$2y$12$GGYGOtQSbc..SgiSmjb75eUgavkpzekzy2BORQFkXuJGsw2Qa7DaG",
+  "roles": [
+    "Seller"
+  ],
+  "phone": "0985954347",
+  "address": [
+    "89",
+    "886",
+    "30337",
+    "Tân Châu Long"
+  ],
+  "active": 1,
+  "store": "Chiếu UZU Tân Châu Long",
+  "website": "https://chieuuzu.vn",
+  "slug": "chieu-uzu-tan-chau-long",
+  "photos": [],
+  "updated_at": {
+    "$date": "2024-02-27T03:53:43.210Z"
+  },
+  "created_at": {
+    "$date": "2024-02-27T03:53:43.210Z"
+  }
+}{
+  "_id": {
+    "$oid": "65dd585b170da6e292087a03"
+  },
+  "name": "Chiếu UZU",
+  "email": "chieu_uzu@gmail.com",
+  "password": "$2y$12$1sG6dGeE3LiByhV/pHFzfeWgKOwhycMKN8aBjq3DJROji/ev617um",
+  "roles": [
+    "Admin"
+  ],
+  "phone": "0985954347",
+  "address": [
+    "89",
+    "886",
+    "30337",
+    "Châu Long"
+  ],
+  "active": 1,
+  "store": "Chiếu UZU",
+  "slug": "chieu-uzu",
+  "website": "https://chieuuzu.vn",
+  "photos": [],
+  "updated_at": {
+    "$date": "2024-02-27T03:34:51.906Z"
+  },
+  "created_at": {
+    "$date": "2024-02-27T03:34:51.906Z"
+  }
+}{
+  "_id": {
+    "$oid": "5c2257a94d9fb914b0001018"
+  },
+  "name": "Phan Minh Trung",
+  "email": "trungminhphan@gmail.com",
+  "password": "$2y$10$IkB19pJRFwc5o1tSk8nBq.CDzOR3UG4.vYaZ.i5Olaykcabr5ANX6",
+  "roles": [
+    "Admin"
+  ],
+  "phone": "0985954347",
+  "address": [
+    "89",
+    "883",
+    "30295",
+    "11"
+  ],
+  "active": 1,
+  "photos": [],
+  "updated_at": {
+    "$date": "2019-09-27T02:09:54Z"
+  },
+  "created_at": {
+    "$date": "2018-12-25T16:15:37Z"
+  },
+  "slug": "phan-minh-trung",
+  "store": "Phan MInh Trung",
+  "website": ""
+}

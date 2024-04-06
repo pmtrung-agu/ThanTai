@@ -1,0 +1,39 @@
+{
+  "_id": {
+    "$oid": "65eae95e6334175e8008f602"
+  },
+  "code": "65EAE95E1B671",
+  "customer": {
+    "id_customer": "",
+    "hoten": "Phan Minh Trung",
+    "dienthoai": "0985954347",
+    "email": "pmtrung@agu.edu.vn",
+    "diachi": "123 Long Châu, Xã Nhơn Hội, Huyện An Phú, Tỉnh An Giang",
+    "ghichu": "Giao hàng nhanh",
+    "ngaydathang": {
+      "$date": "2024-03-08T10:33:02Z"
+    }
+  },
+  "products": [
+    {
+      "id_sanpham": "65ea74f7a686f13a1c0bade2",
+      "title": "Túi sách UZU",
+      "prices": 100000,
+      "discount": "",
+      "discount_amount": 0,
+      "quantity": 1,
+      "total": 100000,
+      "id_seller": {
+        "$oid": "65dd5cc73073b5a2df05c207"
+      },
+      "status": 0
+    }
+  ],
+  "shipping": 50000,
+  "updated_at": {
+    "$date": "2024-03-08T10:33:02.130Z"
+  },
+  "created_at": {
+    "$date": "2024-03-08T10:33:02.130Z"
+  }
+}

@@ -38,7 +38,7 @@ return [
             'driver'   => 'mongodb',
             'host'     => env('DB_HOST', 'localhost'),
             'port'     => env('DB_PORT', 27017),
-            'database' => env('DB_DATABASE', 'SanPhamAnGiang')
+            'database' => env('DB_DATABASE', 'ThanTai')
         ],
         'sqlite' => [
             'driver' => 'sqlite',
