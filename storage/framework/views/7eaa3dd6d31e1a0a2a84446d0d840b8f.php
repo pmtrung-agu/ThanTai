@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Trạm dừng nghỉ Thần Tài - Công ty TNHH Khải Duyên <?php echo $__env->yieldContent('title'); ?></title>
+<title>Điện máy Khải Duyên <?php echo $__env->yieldContent('title'); ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="description" content="Trạm dừng nghỉ Thần Tài - Công ty TNHH Khải Duyên">
-<meta name="keywords" content="Trạm dừng nghỉ Thần Tài - Công ty TNHH Khải Duyên">
+<meta name="description" content="Điện máy Khải Duyên">
+<meta name="keywords" content="Điện máy Khải Duyên">
 <meta name="robots" content="*">
 <link rel="icon" href="<?php echo e(env('APP_URL')); ?>assets/frontend/images/logo.png" type="image/x-icon">
 <link rel="shortcut icon" href="<?php echo e(env('APP_URL')); ?>assets/frontend/images/logo.png" type="image/x-icon">
@@ -35,21 +35,6 @@
 <meta name="viewport" content="initial-scale=1.0, width=device-width">
 </head>
 <body>
-<div id="left_banner_1">
-  <a href="<?php echo e(env('APP_URL')); ?>gia-ca-thi-truong">
-    <img src="<?php echo e(env('APP_URL')); ?>assets/frontend/images/left_banner_1.jpg" alt="" />
-  </a>
-</div>
-<div id="left_banner_2">
-  <a href="<?php echo e(env('APP_URL')); ?>diem-mua-sam-dat-chuan">
-    <img src="<?php echo e(env('APP_URL')); ?>assets/frontend/images/left_banner_2.jpg" alt="" />
-  </a>
-</div>
-<div id="right_banner">
-  <a href="<?php echo e(env('APP_URL')); ?>logistic">
-    <img src="<?php echo e(env('APP_URL')); ?>assets/frontend/images/right_banner.jpg" alt="" />
-  </a>
-</div>
 <div id="page">
  <header>
   <div class="header-banner">
@@ -63,8 +48,8 @@
         </div>
         <div class="col-md-7">
           <div style="height: 20px; overflow: hidden;" id="slideshow">
-            <p style="display: block;">Trạm dừng nghỉ Thần Tài - Công ty TNHH Khải Duyên - <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> chieuuzu@gmail.com <span class="glyphicon glyphicon-phone"></span> 0914 377808</p>
-            <p style="display: none;">Trạm dừng nghỉ Thần Tài - Công ty TNHH Khải Duyên  - <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> chieuuzu@gmail.com <span class="glyphicon glyphicon-phone"></span>0914 377808</p>
+            <p style="display: block;">Điện máy Khải Duyên - <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> dienmaykhaiduyenkd@gmail.com <span class="glyphicon glyphicon-phone"></span> 0918 082 264</p>
+            <p style="display: none;">Điện máy Khải Duyên  - <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> dienmaykhaiduyenkd@gmail.com <span class="glyphicon glyphicon-phone"></span>0918 082 264</p>
           </div>
         </div>
       </div>
@@ -73,8 +58,8 @@
   <div id="header">
     <div class="header-container container">
      <div class="row">
-      <div class="logo"> <a href="<?php echo e(env('APP_URL')); ?>" title="Sản phẩm An Giang">
-        <div><img src="<?php echo e(env('APP_URL')); ?>assets/frontend/images/logo.png" alt="Sản phẩm An Giang"></div>
+      <div class="logo"> <a href="<?php echo e(env('APP_URL')); ?>" title="Trạm dừng nghỉ Thần Tài">
+        <div><img src="<?php echo e(env('APP_URL')); ?>assets/frontend/images/logo.png" style="" alt="Trạm dừng nghỉ Thần Tài"></div>
         </a> </div>
         <div class="fl-nav-menu">
           <nav>
@@ -214,7 +199,11 @@
     <div class="footer-bottom">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-xs-12 coppyright">© 2024 Trạm dừng nghỉ Thần Tài - Công ty TNHH Khải Duyên <br />Địa chỉ: 66 An Hưng, thị trấn An Phú, huyện An Phú, tỉnh An Giang</div>
+          <div class="col-sm-12 col-xs-12 coppyright">
+            © 2024 Điện máy Khải Duyên <br />
+            Địa chỉ: 679 QL91 - xã Bình Hòa, huyện Châu Thành, tỉnh An. <br />
+            Điện thoại: 0918 082 264
+          </div>
         </div>
         <!--row-->
       </div>

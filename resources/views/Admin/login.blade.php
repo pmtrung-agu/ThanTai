@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Trạm dừng nghỉ Thần Tài - Công ty TNHH Khải Duyên</title>
+        <title>Điện máy Khải Duyên</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <meta content="Trạm dừng nghỉ Thần Tài - Công ty TNHH Khải Duyên" name="description" />
+        <meta content="Điện máy Khải Duyên" name="description" />
         <meta content="Phan Minh Trung" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!-- App favicon -->
@@ -26,7 +26,7 @@
                         <div class="card-box p-5">
                             <h2 class="text-uppercase text-center pb-4">
                                 <a href="/" class="text-success">
-                                    <span><img src="{{ env('APP_URL') }}assets/backend/images/logo.png" alt="" height="60"></span>
+                                    <span><img src="{{ env('APP_URL') }}assets/backend/images/logo.png" alt="Điện máy Khải Duyên "></span>
                                 </a>
                             </h2>
                             <form action="{{ env('APP_URL') }}auth/login" method="post">
@@ -63,7 +63,7 @@
                 </div>
             </div>
             <div class="m-t-40 text-center">
-                <p class="account-copyright">2024 © Trạm dừng nghỉ Thần Tài - Công ty TNHH Khải Duyên</p>
+                <p class="account-copyright">2024 © Điện máy Khải Duyên</p>
             </div>
         </div>
         <!-- jQuery  -->

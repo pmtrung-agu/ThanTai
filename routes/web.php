@@ -51,7 +51,8 @@ Route::get('diem-mua-sam-dat-chuan','FrontendController@shopping');
 Route::get('flash-sale', 'FrontendController@flash_sale');
 Route::get('flash-sale-soon', 'FrontendController@flash_sale_soon');
 //page
-Route::get('gioi-thieu', 'PageController@quy_che_hoat_dong');
+Route::get('gioi-thieu', 'PageController@gioi_thieu');
+Route::get('hinh-anh', 'PageController@hinh_anh');
 Route::get('huong-dan-mua-hang', 'PageController@quy_che_hoat_dong');
 Route::get('quy-che-hoat-dong', 'PageController@quy_che_hoat_dong');
 Route::get('chinh-sach-bao-hanh', 'PageController@chinh_sach_bao_hanh');

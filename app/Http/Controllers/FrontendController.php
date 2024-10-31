@@ -56,7 +56,7 @@ class FrontendController extends Controller
       $promotions = Promotion::where('date_from', '<=', $current_date)->where('date_to', '>=', $current_date)->get();
       $articles = Article::orderBy('updated_at','desc')->take(3)->get()->toArray();
       $promotions_soon = Promotion::where('date_from', '>', $current_date)->paginate(30);
-      return view('Frontend.ThanTai.index')->with(compact('promotions', 'promotions_soon', 'articles'));
+      return view('Frontend.index')->with(compact('promotions', 'promotions_soon', 'articles'));
     }
 
     function san_pham(Request $request, $slug = ''){
@@ -69,13 +69,13 @@ class FrontendController extends Controller
           $products = Product::where('status','=',1)->where('prices', '>', 0)->orderBy('updated_at','desc')->paginate(12);
           $category_title = 'Danh sách Sản phẩm';
         }
-        return view('Frontend.Uzu.products')->with(compact('products', 'category_title', 'slug'));
+        return view('Frontend.products')->with(compact('products', 'category_title', 'slug'));
     }
 
     function san_pham_noi_bat(){
       $products = Product::where('hot','=', 1)->where('status','=',1)->where('prices', '>', 0)->orderBy('updated_at','desc')->paginate(12);
       $category_title = 'Sản phẩm nổi bật';
-      return view('Frontend.Uzu.products')->with(compact('products', 'category_title'));
+      return view('Frontend.products')->with(compact('products', 'category_title'));
     }
 
     function chi_tiet_san_pham(Request $request, $slug = ''){
@@ -89,13 +89,13 @@ class FrontendController extends Controller
 
         $current_date = ObjectController::setDate();
         $promotion = Promotion::where('id_products', $product['_id'])->where('date_from', '<=', $current_date)->where('date_to', '>=', $current_date)->first();
-        return view('Frontend.Uzu.product_detail')->with(compact('product','relate_products', 'promotion'));
+        return view('Frontend.product_detail')->with(compact('product','relate_products', 'promotion'));
     }
 
     function tim_kiem_san_pham(Request $request){
       $s = $request->input('s');
       $products = Product::where('status','=',1)->where('prices','>',0)->where('title', 'regexp', '/.*'.$s.'/i')->get()->toArray();
-      return view('Frontend.Uzu.search')->with(compact('s', 'products'));
+      return view('Frontend.search')->with(compact('s', 'products'));
     }
 
     function category(Request $request, $slug = ''){
@@ -105,19 +105,19 @@ class FrontendController extends Controller
       } else {
           $articles = Article::orderBy('updated_at','desc')->get()->toArray();
       }
-      return view('Frontend.Uzu.category')->with(compact('articles'));
+      return view('Frontend.category')->with(compact('articles'));
     }
 
     function article(Request $request, $slug = ''){
       $article = Article::where('slug','=',$slug)->first();
       $article = isset($article) ? $article : '';
       $relates = Article::orderBy('updated_at','desc')->take(4)->get()->toArray();
-      return view('Frontend.Uzu.article')->with(compact('article','relates'));
+      return view('Frontend.article')->with(compact('article','relates'));
     }
 
     function sellers(Request $request){
       $sellers = User::where('roles', 'Seller')->orderBy('updated_at','desc')->paginate(12);
-      return view('Frontend.Uzu.sellers')->with(compact('sellers'));
+      return view('Frontend.sellers')->with(compact('sellers'));
     }
 
     function seller_products(Request $request, $slug){
@@ -125,7 +125,7 @@ class FrontendController extends Controller
       $id_seller = ObjectController::ObjectId($seller['_id']);
       $products = Product::where('status','=',1)->where('id_seller', '=', $id_seller)->orderBy('updated_at','desc')->paginate(12);
 
-      return view('Frontend.Uzu.seller_products')->with(compact('seller','products', 'slug'));
+      return view('Frontend.seller_products')->with(compact('seller','products', 'slug'));
     }
 
     function seller_intro(Request $request, $slug = ''){
@@ -133,12 +133,12 @@ class FrontendController extends Controller
       $relates = User::where('slug','<>', $slug)->where('roles', 'Seller')->where('gioi_thieu','exists', true)->where('gioi_thieu','<>',"")->orderBy('updated', 'desc')->take(12)->get()->toArray();
       $id_seller = ObjectController::ObjectId($seller['_id']);
       $products = Product::where('id_seller','=',$id_seller)->take(12)->get()->toArray();
-      return view('Frontend.Uzu.seller_intro')->with(compact('seller','relates','products'));
+      return view('Frontend.seller_intro')->with(compact('seller','relates','products'));
     }
 
     function cart(Request $request){
       $provinces = Address::where('matructhuoc','=','')->get()->toArray();
-      return view('Frontend.Uzu.cart')->with(compact('provinces'));
+      return view('Frontend.cart')->with(compact('provinces'));
     }
 
     function add_cart(Request $request, $id_product = null, $quantity = 1){
@@ -323,28 +323,28 @@ class FrontendController extends Controller
         $order->shipping = doubleval($shipping);
         $order->save();
         $msg = 'Success';
-        $to_name = 'Chiếu UZU Tân Châu Long';
+        $to_name = 'Trạm dừng nghỉ Thần Tài';
         $to_email = 'trungminhphan@gmail.com';
         $from_email = env('MAIL_FROM_ADDRESS');
         $data = array('code' => $madonhang, 'customer' => $arr_customer, 'products' => $arr_sanpham);
         //SEND TO ADMIN
         Mail::send('Admin.Email.order', $data, function($message) use ($to_name, $to_email, $madonhang) {
           $message->to($to_email, $to_name)->subject('[CHIEU_UZU] Đơn hàng mới ['.$madonhang.']');
-          $message->from('trungminhphan@gmail.com', 'Chiếu UZU Tân Châu Long');
+          $message->from('trungminhphan@gmail.com', 'Trạm dừng nghỉ Thần Tài');
         });
         /*Mail::send('Admin.Email.order', $data, function($message) use ($to_name, $to_email, $madonhang) {
           $message->to('trungminhphan@gmail.com', $to_name)->subject('[CHIEU_UZU] Đơn hàng mới ['.$madonhang.']');
-          $message->from('trungminhphan@gmail.com', 'Chiếu UZU Tân Châu Long');
+          $message->from('trungminhphan@gmail.com', 'Trạm dừng nghỉ Thần Tài');
         });*/
         //SEND TO CUSTOMER
         foreach($sanpham_seller as $key => $value){
           $seller = User::find($key);
-          $to_name = '[ĐƠN HÀNG MỚI] Chiếu UZU Tân Châu Longg';
+          $to_name = '[ĐƠN HÀNG MỚI] Trạm dừng nghỉ Thần Tàig';
           $to_email = $seller['email'];
           $data = array('code' => $madonhang, 'customer' => $arr_customer, 'products' => $sanpham_seller[$key]);
           Mail::send('Admin.Email.order', $data, function($message) use ($to_name, $to_email, $madonhang) {
             $message->to($to_email, $to_name)->subject('[CHIEU_UZU] Đơn hàng mới ['.$madonhang.']');
-            $message->from('trungminhphan@gmail.com', 'Chiếu UZU Tân Châu Long');
+            $message->from('trungminhphan@gmail.com', 'Trạm dừng nghỉ Thần Tài');
           });
         }
         $request->session()->pull('cart_items');

@@ -26,6 +26,12 @@ class PageController extends Controller
         View::share('doanhnghiep', $doanhnghiep);
     }
 
+    function gioi_thieu(){
+        return view('Frontend.ThanTaiViet.gioi-thieu');
+    }
+    function hinh_anh(){
+        return view('Frontend.ThanTaiViet.hinh-anh');
+    }
     function quy_che_hoat_dong(){
         return view('Frontend.Page.quy_che_hoat_dong');
     }

@@ -10,10 +10,6 @@
           <ul>
             <li data-transition='random' data-slotamount='7' data-masterspeed='1000' data-thumb='<?php echo e(env('APP_URL')); ?>assets/frontend/images/banner/slide_0.jpg'><img src='<?php echo e(env('APP_URL')); ?>assets/frontend/images/banner/slide_0.jpg'  data-bgposition='center center'  data-bgfit='cover' data-bgrepeat='no-repeat'/>
             </li>
-            <li data-transition='random' data-slotamount='7' data-masterspeed='1000' data-thumb='<?php echo e(env('APP_URL')); ?>assets/frontend/images/banner/slide_1.jpg'><img src='<?php echo e(env('APP_URL')); ?>assets/frontend/images/banner/slide_1.jpg'  data-bgposition='center center'  data-bgfit='cover' data-bgrepeat='no-repeat'/>
-            </li>
-            <li data-transition='random' data-slotamount='7' data-masterspeed='1000' data-thumb='<?php echo e(env('APP_URL')); ?>assets/frontend/images/banner/slide_2.jpg'><img src='<?php echo e(env('APP_URL')); ?>assets/frontend/images/banner/slide_2.jpg'  data-bgposition='center center'  data-bgfit='cover' data-bgrepeat='no-repeat'/>
-            </li>
             
           </ul>
         </div>

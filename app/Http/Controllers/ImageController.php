@@ -22,7 +22,7 @@ class ImageController extends Controller
           $thumb = storage_path().'/app/public/images/thumb_300x200/' . $filename;
           $thumb_800 = storage_path(). '/app/public/images/thumb_800x800/' . $filename;
           $thumb_785x476 =storage_path().'/app/public/images/thumb_785x476/' . $filename;
-          Image::make($file->getRealPath())->resize(300, null, function($constraint){ $constraint->aspectRatio(); })->save($thumb);
+          Image::make($file->getRealPath())->resize(307, null, function($constraint){ $constraint->aspectRatio(); })->save($thumb);
           Image::make($file->getRealPath())->fit(800, 800, function ($constraint) {$constraint->aspectRatio();})->save($thumb_800);
           Image::make($file->getRealPath())->fit(785,476, function ($constraint) {$constraint->aspectRatio();})->save($thumb_785x476);
           echo '<div class="col-sm-6 col-md-4 items draggable-element text-center">
